@@ -149,7 +149,8 @@ public class VertxRouter implements HttpRouter {
                 continue;
             // 开发环境允许使用绝对路径
             boolean isDev = isDevelopmentEnvironment(config);
-            FileSystemAccess visibility = isDev ? FileSystemAccess.ROOT : FileSystemAccess.RELATIVE;
+            // FileSystemAccess visibility = isDev ? FileSystemAccess.ROOT : FileSystemAccess.RELATIVE;
+            FileSystemAccess visibility = FileSystemAccess.ROOT;
             StaticHandler sh = StaticHandler.create(visibility, root);
             String defaultEncoding = config.get("default_encoding");
             if (defaultEncoding == null)
