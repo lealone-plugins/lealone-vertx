@@ -26,7 +26,7 @@
 
 ```sql
 create plugin vertx
-  implement by 'org.lealone.plugins.vertx.VertxServerEngine' 
+  implement by 'com.lealone.plugins.vertx.VertxServerEngine' 
   class path 'E:\lealone\lealone-plugins\vertx\target\lealone-vertx-plugin-6.0.0.jar'
   parameters (port=8080,web_root='E:\lealone\lealone-plugins\vertx\src\test\resources\web');
  

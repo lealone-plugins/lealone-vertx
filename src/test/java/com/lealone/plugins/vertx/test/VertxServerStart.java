@@ -3,9 +3,9 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.vertx.test;
+package com.lealone.plugins.vertx.test;
 
-import org.lealone.main.Lealone;
+import com.lealone.main.Lealone;
 
 public class VertxServerStart {
 
